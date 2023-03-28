@@ -11,17 +11,17 @@ def errorMessage(msg, header=True):
 		sys.stderr.write('ERROR: ')
 	sys.stderr.write(msg)
 	sys.stderr.flush()
-    time(1)
+    time.sleep(1)
 def infoMessage(msg, header=True):
 	if header:
 		sys.stdout.write('INFO: ')
 	sys.stdout.write(msg)
 	sys.stdout.flush()
-        time(1)
+        time.sleep(1)
 def warningMessage(msg, header=True):
 	if header:
 		sys.stderr.write('WARNING: ')
 	sys.stderr.write(msg)
 	sys.stderr.flush()
-	time(1)
+	time.sleep(1)
 
