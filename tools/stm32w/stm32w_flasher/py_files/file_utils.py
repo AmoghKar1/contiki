@@ -40,13 +40,13 @@ class fileFormatReader(object):
 			bytesRaw = f.read()
 			bytes = []
 			bytes.extend(struct.unpack(('B' * len(bytesRaw)), bytesRaw))
-			time (1)
+			time.sleep (1)
 			f.close()
 		else:
 			if self.filename[-4:] == '.s37':
 				fillChar = 255
 				fileContent = f.readlines()
-				time (1)
+				time.sleep (1)
 				f.close()
 				startAddress = None
 				currentAddress = None
@@ -84,6 +84,6 @@ class fileFormatReader(object):
 				raise FileFormatError(self.filename, 'Unknown extension')
 				time (1)
 		return (self.startAddress, bytes)
-                time (1)
+                time.sleep (1)
 
 
